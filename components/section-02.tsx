@@ -22,11 +22,10 @@ export default function Section02() {
 
                 {/* Copy */}
                 <h2 className="h2 text-white mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-2]" data-aos-delay="100">
-                  Build a flexible card program for your business needs
+                  Revolutionize Your Office Space with AI-Driven Seating Plans!
                 </h2>
                 <p className="text-lg text-slate-400 mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-2]" data-aos-delay="200">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-                  veniam, quis nostrud exercitation.
+                  Unlock the Power of Collaboration with Intelligent Seating Solutions
                 </p>
 
                 {/* Button */}
@@ -54,8 +53,9 @@ export default function Section02() {
                   />
                   <div>
                     <blockquote className="text-slate-400 m-0">
-                      “ We know the card market very well and this product provides the speed, flexible account model and API-first approach that no
-                      one else can. ”
+                      “Our office transformed into a hub of collaboration!
+                        The AI-driven seating plans have boosted productivity and fostered dynamic teamwork like never before.
+                        Our employees love the optimized seating arrangements that maximize interaction and innovation. It's a game-changer!”
                     </blockquote>
                   </div>
                 </div>

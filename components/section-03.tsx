@@ -20,7 +20,7 @@ export default function Section03() {
               <div className="w-[512px] max-w-full shrink-0 md:order-1">
                 {/* Copy */}
                 <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="100">
-                  Spend your money everwhere, pay anyone effortlessy
+                  Seating Redefined: Harness the Potential of AI to Create an Inspiring Workspace.
                 </h2>
                 <p className="text-lg text-slate-500 mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="200">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim
