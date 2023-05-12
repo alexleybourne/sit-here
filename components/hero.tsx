@@ -1,5 +1,6 @@
+import Chair from '@/public/images/chair.png';
 import EffectFade from 'swiper';
-import HeroImage from '@/public/images/hero-image.png';
+import HeroCard from '@/public/images/hero-card.png';
 import Illustration from '@/public/images/hero-illustration.svg';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -92,10 +93,16 @@ export default function Hero() {
                   aria-hidden='true'
                 />
                 <Image
-                  src={HeroImage}
+                  src={Chair}
+                  className='md:max-w-none absolute z-10 hovering-element'
+                  height='600'
+                  alt='Credit card'
+                  data-aos='fade-up'
+                />
+                <Image
+                  src={HeroCard}
                   className='md:max-w-none'
-                  width='548'
-                  height='545'
+                  height='600'
                   alt='Credit card'
                   data-aos='fade-up'
                 />

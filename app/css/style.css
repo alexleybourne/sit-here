@@ -16,3 +16,26 @@
     }
 }
 
+.nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+}
+
+@keyframes hover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hovering-element {
+    animation: hover 6s infinite ease-in-out;
+}
+
