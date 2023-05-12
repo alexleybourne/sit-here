@@ -1,113 +1,103 @@
 export default function Section01() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-28 md:pb-20">
+      <div className='max-w-6xl mx-auto px-4 sm:px-6'>
+        <div className='py-12 md:py-28 md:pb-20'>
           {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-12 md:grid-cols-3 md:-mx-9 md:gap-0 items-start md:max-w-none">
-
+          <div className='max-w-sm mx-auto grid gap-12 md:grid-cols-3 md:-mx-9 md:gap-0 items-start md:max-w-none'>
             {/* 1st item */}
             <div
-              className="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
-              data-aos="fade-up"
+              className='relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden'
+              data-aos='fade-up'
             >
-              <div className="mb-3">
-                <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="a">
-                      <stop stopColor="#2563EB" offset="0%" />
-                      <stop stopColor="#3B82F6" offset="100%" />
-                    </linearGradient>
-                  </defs>
-                  <g fillRule="nonzero" fill="none">
-                    <path
-                      d="M43.443 49.745a1.028 1.028 0 0 1-.262-.019l-23.5-4.9a1 1 0 0 1-.775-1.186l6.2-29.352a1.006 1.006 0 0 1 1.182-.773l23.42 4.885a1 1 0 0 1 .776 1.183l-6.12 29.37a1 1 0 0 1-.921.795v-.003Z"
-                      fill="#7DD3FC"
-                    />
-                    <path
-                      d="M25 32H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h24a1 1 0 0 1 1 1v30a1 1 0 0 1-1 1ZM8 15.25l3.5 4 6.5-6.5-1-.75-5.5 4.25-2.5-2-1 1Z"
-                      fill="url(#a)"
-                      style={{ mixBlendMode: 'multiply' }}
-                      transform="translate(6 6)"
-                    />
-                  </g>
+              <div className='mb-3'>
+                <svg
+                  width='40'
+                  height='40'
+                  viewBox='0 0 114 114'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M0 10C0 4.47716 4.47715 0 10 0H104C109.523 0 114 4.47715 114 10V104C114 109.523 109.523 114 104 114H10C4.47716 114 0 109.523 0 104V10Z'
+                    fill='#3C82F5'
+                  />
+                  <path
+                    d='M69.998 19.7969V98H51.8975V40.207L34.0654 45.417V31.667L68.333 19.7969H69.998Z'
+                    fill='white'
+                  />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Create custom cards</h4>
-              <p className="text-slate-500">
-                Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+              <h4 className='text-xl font-bold mb-1'>Select your desks</h4>
+              <p className='text-slate-500'>
+                Upload a floor plan of your office and select all of the desks.
               </p>
             </div>
 
             {/* 2nd item */}
             <div
-              className="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
-              data-aos="fade-up"
-              data-aos-delay="100"
+              className='relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden'
+              data-aos='fade-up'
+              data-aos-delay='100'
             >
-              <div className="mb-3">
-                <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="a">
-                      <stop stopColor="#2563EB" offset="0%" />
-                      <stop stopColor="#3B82F6" offset="100%" />
-                    </linearGradient>
-                  </defs>
-                  <g fillRule="nonzero" fill="none">
-                    <path
-                      d="m19.93 36.705-9.769-20.03c-.208-.426.026-.966.523-1.209L39.446 1.438c.497-.242 1.066-.094 1.274.332l9.77 20.03c.207.427-.026.967-.523 1.21L21.205 37.036c-.497.243-1.067.094-1.274-.332Zm2.395-22.466-7.19 3.507.876 1.798 7.19-3.507-.876-1.798Z"
-                      fill="#7DD3FC"
-                    />
-                    <path
-                      d="M32 46V12h5.143c.474 0 .857.447.857 1v32c0 .553-.383 1-.857 1H32Zm-2 0H14.857c-.474 0-.857-.447-.857-1V13c0-.553.383-1 .857-1H30v34ZM18 34v8h2v-8h-2Z"
-                      fill="url(#a)"
-                      style={{ mixBlendMode: 'multiply' }}
-                      transform="rotate(64 19.372 32.782)"
-                    />
-                  </g>
+              <div className='mb-3'>
+                <svg
+                  width='40'
+                  height='40'
+                  viewBox='0 0 114 114'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M0 10C0 4.47716 4.47715 0 10 0H104C109.523 0 114 4.47715 114 10V104C114 109.523 109.523 114 104 114H10C4.47716 114 0 109.523 0 104V10Z'
+                    fill='#3C82F5'
+                  />
+                  <path
+                    d='M84.5 84.0352V98H29.9297V86.1836L55.0664 59.7578C57.2865 57.2155 59.0768 54.9417 60.4375 52.9365C61.7982 50.8955 62.7829 49.0514 63.3916 47.4043C64.0361 45.7572 64.3584 44.2712 64.3584 42.9463C64.3584 40.6904 64.0182 38.8105 63.3379 37.3066C62.6934 35.7669 61.7266 34.6032 60.4375 33.8154C59.1842 33.0277 57.6266 32.6338 55.7646 32.6338C53.9027 32.6338 52.2734 33.1709 50.877 34.2451C49.4805 35.3193 48.3883 36.7874 47.6006 38.6494C46.8486 40.5114 46.4727 42.6061 46.4727 44.9336H28.3184C28.3184 40.1354 29.4821 35.749 31.8096 31.7744C34.1729 27.7998 37.4492 24.6309 41.6387 22.2676C45.8281 19.8685 50.68 18.6689 56.1943 18.6689C61.9593 18.6689 66.7933 19.5641 70.6963 21.3545C74.5993 23.1449 77.5355 25.7409 79.5049 29.1426C81.5101 32.5085 82.5127 36.5726 82.5127 41.335C82.5127 44.0563 82.083 46.6702 81.2236 49.1768C80.3643 51.6833 79.1289 54.1719 77.5176 56.6426C75.9062 59.0775 73.9368 61.584 71.6094 64.1621C69.3177 66.7402 66.7038 69.4795 63.7676 72.3799L53.6699 84.0352H84.5Z'
+                    fill='white'
+                  />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Create custom cards</h4>
-              <p className="text-slate-500">
-                Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+              <h4 className='text-xl font-bold mb-1'>Custom algorithm</h4>
+              <p className='text-slate-500'>
+                Create your desired matching algorithm and let our AI do the
+                rest.
               </p>
             </div>
 
             {/* 3rd item */}
             <div
-              className="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              className='relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden'
+              data-aos='fade-up'
+              data-aos-delay='200'
             >
-              <div className="mb-3">
-                <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="a">
-                      <stop stopColor="#2563EB" offset="0%" />
-                      <stop stopColor="#3B82F6" offset="100%" />
-                    </linearGradient>
-                  </defs>
-                  <g fillRule="nonzero" fill="none">
-                    <path
-                      d="M30.22 38.065h-26a1 1 0 0 1-1-1v-32a1 1 0 0 1 1-1h26a1 1 0 0 1 1 1v32a1 1 0 0 1-1 1Zm-19-24v2h7v-2h-7Zm3 6v2h10v-2h-10Zm-3 6v2h7v-2h-7Z"
-                      fill="#7DD3FC"
-                    />
-                    <path
-                      d="m51.585 50.536-25.984.907a1 1 0 0 1-1.034-.964l-1.117-31.98a1 1 0 0 1 .965-1.035l25.984-.907a1 1 0 0 1 1.034.964l1.117 31.98a1 1 0 0 1-.965 1.035ZM40.337 38.061l3.832-4.11a.843.843 0 0 0-.042-1.192l-4.11-3.833-1.15 1.235 3.492 3.256-3.257 3.493 1.235 1.15Zm-4.97.173L36.518 37l-3.492-3.257 3.256-3.492-1.234-1.151-3.832 4.11a.843.843 0 0 0 .041 1.192l4.11 3.832Z"
-                      fill="url(#a)"
-                      style={{ mixBlendMode: 'multiply' }}
-                    />
-                  </g>
+              <div className='mb-3'>
+                <svg
+                  width='40'
+                  height='40'
+                  viewBox='0 0 114 114'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M0 10C0 4.47716 4.47715 0 10 0H104C109.523 0 114 4.47715 114 10V104C114 109.523 109.523 114 104 114H10C4.47716 114 0 109.523 0 104V10Z'
+                    fill='#3C82F5'
+                  />
+                  <path
+                    d='M46.4189 51.3252H55.2275C57.4834 51.3252 59.3275 50.9313 60.7598 50.1436C62.2279 49.32 63.32 48.1742 64.0361 46.7061C64.7523 45.2021 65.1104 43.4297 65.1104 41.3887C65.1104 39.8132 64.7702 38.363 64.0898 37.0381C63.4453 35.7132 62.4427 34.6569 61.082 33.8691C59.7214 33.0456 57.9847 32.6338 55.8721 32.6338C54.4398 32.6338 53.0433 32.9382 51.6826 33.5469C50.3219 34.1198 49.194 34.9434 48.2988 36.0176C47.4395 37.0918 47.0098 38.3988 47.0098 39.9385H28.8555C28.8555 35.4984 30.0729 31.7028 32.5078 28.5518C34.9785 25.3649 38.2191 22.93 42.2295 21.2471C46.2757 19.5283 50.6263 18.6689 55.2812 18.6689C60.8314 18.6689 65.7012 19.5283 69.8906 21.2471C74.0801 22.93 77.3385 25.4365 79.666 28.7666C82.0293 32.0609 83.2109 36.1429 83.2109 41.0127C83.2109 43.6982 82.5843 46.2227 81.3311 48.5859C80.0778 50.9492 78.3232 53.026 76.0674 54.8164C73.8115 56.6068 71.1618 58.0212 68.1182 59.0596C76.5 57.5 61.8161 55.7832 58.2354 55.7832H46.4189V60.5635V51.3252ZM46.4189 64.8066V55.7832H58.2354C62.1383 55.7832 65.7012 56.2308 68.9238 57.126C72.1465 57.9854 74.9215 59.2744 77.249 60.9932C79.5765 62.7119 81.3669 64.8424 82.6201 67.3848C83.8734 69.8913 84.5 72.7738 84.5 76.0322C84.5 79.6846 83.766 82.943 82.2979 85.8076C80.8298 88.6722 78.7708 91.0892 76.1211 93.0586C73.4714 95.028 70.374 96.5319 66.8291 97.5703C63.2842 98.5729 59.4349 99.0742 55.2812 99.0742C52.0228 99.0742 48.7643 98.6445 45.5059 97.7852C42.2474 96.89 39.2754 95.5293 36.5898 93.7031C33.9043 91.8411 31.738 89.4779 30.0908 86.6133C28.4795 83.7129 27.6738 80.2575 27.6738 76.2471H45.8281C45.8281 77.8942 46.2757 79.3981 47.1709 80.7588C48.1019 82.0837 49.3372 83.14 50.877 83.9277C52.4167 84.7155 54.0817 85.1094 55.8721 85.1094C58.0921 85.1094 59.972 84.6976 61.5117 83.874C63.0872 83.0146 64.2868 81.8688 65.1104 80.4365C65.9339 79.0042 66.3457 77.4108 66.3457 75.6562C66.3457 73.0065 65.8981 70.8939 65.0029 69.3184C64.1436 67.7428 62.8724 66.597 61.1895 65.8809C59.5423 65.1647 57.555 64.8066 55.2275 64.8066H46.4189Z'
+                    fill='white'
+                  />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Create custom cards</h4>
-              <p className="text-slate-500">
-                Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+              <h4 className='text-xl font-bold mb-1'>Desks assigned</h4>
+              <p className='text-slate-500'>
+                You'll now be greeted with a seating plan that you can share
+                with your staff.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
