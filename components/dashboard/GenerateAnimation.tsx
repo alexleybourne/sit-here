@@ -24,7 +24,7 @@ const GenerateAnimation = (props: any) => {
     <div className={styles.container}>
       <div ref={container} id="animation-container"/>
       <div className={styles.information}>
-        <div className="font-black text-white" style={{ fontSize: '3rem' }}>Generating animation...</div>
+        <div className="font-black text-white" style={{ fontSize: '3rem' }}>Generating floorplan</div>
       </div>
     </div>
   )
