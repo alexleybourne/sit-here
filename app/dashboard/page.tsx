@@ -37,32 +37,7 @@ export default function Dashboard() {
     <>
       <Header hideButton solid title='Dashboard' />
       <div className='flex min-h-screen pt-20'>
-        <div className='w-1/6 bg-gray-200 p-4'>
-          <nav>
-            <ul className='space-y-2'>
-              <li>
-                <a href='#' className='text-blue-500 hover:text-blue-600'>
-                  Option 1
-                </a>
-              </li>
-              <li>
-                <a href='#' className='text-blue-500 hover:text-blue-600'>
-                  Option 2
-                </a>
-              </li>
-              <li>
-                <a href='#' className='text-blue-500 hover:text-blue-600'>
-                  Option 3
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className='w-5/6 bg-gray-100 p-4'>
-          <h1 className='text-xl font-bold'>Main Dashboard</h1>
-          {/* Add your main dashboard content here */}
-          <CSVUploader />
-        </div>
+        <CSVUploader />
       </div>
     </>
   );

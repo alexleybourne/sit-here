@@ -43,3 +43,10 @@
     animation: hover 6s infinite ease-in-out;
 }
 
+.split-line {
+    width: 200vw;
+    height: 2px;
+    background-color: #2A6AED;
+    transform: translateX(-20vw);
+}
+
