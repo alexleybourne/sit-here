@@ -21,6 +21,10 @@
     backdrop-filter: blur(16px);
 }
 
+.nav-solid {
+    background: #2A6AED;
+}
+
 @keyframes hover {
     0% {
         transform: translateY(0);

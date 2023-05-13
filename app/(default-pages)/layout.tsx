@@ -1,39 +1,29 @@
-'use client'
+'use client';
 
-import { useEffect } from 'react'
+import 'aos/dist/aos.css';
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from 'aos';
+import Footer from '@/components/ui/footer';
+import Header from '@/components/ui/header';
+import { useEffect } from 'react';
 
-import Header from '@/components/ui/header'
-import Footer from '@/components/ui/footer'
-
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode
-}) {  
-
+export default function Layout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     AOS.init({
       once: true,
       disable: 'phone',
       duration: 700,
       easing: 'ease-out-cubic',
-    })
-  })
+    });
+  });
 
   return (
     <>
       <Header />
-      
-      <main className="grow">
 
-        {children}
-
-      </main>
+      <main className='grow'>{children}</main>
 
       <Footer />
     </>
-  )
+  );
 }
