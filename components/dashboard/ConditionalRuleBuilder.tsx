@@ -2,14 +2,21 @@
 
 import React, { useState } from 'react';
 
-export const DEPARTMENT_OPTIONS = ['Human Resources', 'Software Development', 'Sales', 'Finance', 'Marketing', 'Internship'];
+// export const DEPARTMENT_OPTIONS = [
+//   'Human Resources',
+//   'Software Development',
+//   'Sales',
+//   'Finance',
+//   'Marketing',
+//   'Internship',
+// ];
 export const CONDITIONS = [
   'Sits with',
   'Sits away from',
   'Sits close to',
   'Sits furthest from',
-  'Sits opposite from'
-]
+  'Sits opposite from',
+];
 
 const ConditionalRuleBuilder = (props: any) => {
   const [firstCondition, setFirstCondition] = useState(props.leftCondition);
@@ -24,8 +31,8 @@ const ConditionalRuleBuilder = (props: any) => {
             value={firstCondition}
             onChange={(e) => setFirstCondition(e.target.value)}
           >
-            <option value="">Select a department</option>
-            {[...DEPARTMENT_OPTIONS, ...props.employeeNames].map((department) => (
+            <option value=''>Select a department</option>
+            {[...props.employeeDepartments].map((department) => (
               <option key={department} value={department}>
                 {department}
               </option>
@@ -37,7 +44,7 @@ const ConditionalRuleBuilder = (props: any) => {
             value={secondCondition}
             onChange={(e) => setSecondCondition(e.target.value)}
           >
-            <option value="">Select a seating arrangement</option>
+            <option value=''>Select a seating arrangement</option>
             {CONDITIONS.map((seating) => (
               <option key={seating} value={seating}>
                 {seating}
@@ -50,8 +57,8 @@ const ConditionalRuleBuilder = (props: any) => {
             value={thirdCondition}
             onChange={(e) => setThirdCondition(e.target.value)}
           >
-            <option value="">Select a department</option>
-            {[...DEPARTMENT_OPTIONS, ...props.employeeNames].map((department) => (
+            <option value=''>Select a department</option>
+            {[...props.employeeDepartments].map((department) => (
               <option key={department} value={department}>
                 {department}
               </option>
