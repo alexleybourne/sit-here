@@ -115,6 +115,30 @@ export default function Home() {
             className='hidden'
           />
         </label>
+        <ul className='mt-4'>
+          <li
+            key={1}
+            className='outline outline-blue-700 rounded flex px-1 mb-4 justify-between items-center'
+          >
+            <button className='text-left text-gray-700 font-bold'>
+              business-corp.png
+            </button>
+            <button className=' text-gray pl-2 rounded'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 24 24'
+                fill='currentColor'
+                className='w-6 h-6 hover:fill-red-500'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M2.515 10.674a1.875 1.875 0 000 2.652L8.89 19.7c.352.351.829.549 1.326.549H19.5a3 3 0 003-3V6.75a3 3 0 00-3-3h-9.284c-.497 0-.974.198-1.326.55l-6.375 6.374zM12.53 9.22a.75.75 0 10-1.06 1.06L13.19 12l-1.72 1.72a.75.75 0 101.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 101.06-1.06L15.31 12l1.72-1.72a.75.75 0 10-1.06-1.06l-1.72 1.72-1.72-1.72z'
+                  clipRule='evenodd'
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
       <div className='w-1/5'>{/* Spacer for behind side bar */}</div>
       <div className='w-3/4 p-4'>
@@ -150,6 +174,26 @@ export default function Home() {
                 GENERATE FLOORPLAN
               </span>
             </label>
+          </div>
+        )}
+
+        {!selectedFile && (
+          <div className='flex flex-col items-center justify-center h-full'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'
+              fill='currentColor'
+              className='w-20 h-20'
+            >
+              <path
+                fillRule='evenodd'
+                d='M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zM12.75 12a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V18a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V12z'
+                clipRule='evenodd'
+              />
+              <path d='M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z' />
+            </svg>
+
+            <h1 className='text-2xl font-bold mb-4'>Upload and Select a CSV</h1>
           </div>
         )}
 

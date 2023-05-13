@@ -50,3 +50,7 @@
     transform: translateX(-20vw);
 }
 
+.animation-text {
+    transform: translateY(-22vh);
+}
+

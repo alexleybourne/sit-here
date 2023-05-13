@@ -10,13 +10,7 @@ import React, { useState } from 'react';
 //   'Marketing',
 //   'Internship',
 // ];
-export const CONDITIONS = [
-  'Sits with',
-  'Sits away from',
-  'Sits close to',
-  'Sits furthest from',
-  'Sits opposite from',
-];
+export const CONDITIONS = ['Sits with', 'Sits away from'];
 
 const ConditionalRuleBuilder = (props: any) => {
   const [firstCondition, setFirstCondition] = useState(props.leftCondition);
