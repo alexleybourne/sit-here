@@ -2,13 +2,22 @@
 
 import { useState } from "react";
 import ConditionalRuleBuilder from "./ConditionalRuleBuilder";
+import _ from "lodash"
 
 const DEFAULT_RULE = { id: 1, leftCondition: 'Human Resources', operation: 'Sits with', rightCondition: 'Software Development' }
 
-const Conditions = () => {
+const Conditions = (props: any) => {
   const [conditions, setConditions] = useState([
     DEFAULT_RULE
   ])
+
+  const employeeNames = (props.selectedFile?.data || [])
+    .map((employee: any) => employee[0])
+    .filter((name: string) => name !== 'Name')
+
+  const employeeDepartments = (props.selectedFile?.data || [])
+    .map((employee: any) => employee[1])
+    .filter((name: string) => name !== 'Department')
 
   const handleAddRule = () => setConditions([...conditions, {
     ...DEFAULT_RULE,
@@ -25,6 +34,8 @@ const Conditions = () => {
       </div>
       {conditions.map((rule: any) => (
         <ConditionalRuleBuilder
+          employeeNames={employeeNames}
+          employeeDepartments={_.uniq(employeeDepartments)}
           {...rule}
           handleRemoveRule={() => handleRemoveRule(rule.id)}
         />

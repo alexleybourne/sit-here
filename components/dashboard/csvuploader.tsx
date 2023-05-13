@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react';
 
 import Papa from 'papaparse';
 import Conditions from './Conditions';
+import GenerateAnimation from './GenerateAnimation';
 
 export default function Home() {
   const [files, setFiles] = useState([]);
   const [selectedFile, setSelectedFile] = useState(null);
+  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     const storedFiles = JSON.parse(localStorage.getItem('csvFiles') || '[]');
@@ -25,6 +27,10 @@ export default function Home() {
     });
   };
 
+  const handleFloorPlanUpload = () => {
+    console.log('handleFloorPlanUpload')
+  }
+
   const handleRemoveFile = (fileName) => {
     if (selectedFile && fileName === selectedFile.name) setSelectedFile(null);
     setFiles((prevFiles) => prevFiles.filter((file) => file.name !== fileName));
@@ -35,7 +41,8 @@ export default function Home() {
   };
 
   const handleGeneration = () => {
-    alert('generating seating plan!')
+    setAnimate(true)
+    setTimeout(() => { setAnimate(false) }, 3000)
   }
 
   return (
@@ -85,13 +92,26 @@ export default function Home() {
             </li>
           ))}
         </ul>
+        <div className="my-3" />
+        <label className='w-64 flex items-center justify-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue-500 hover:text-white'>
+          <svg
+            className='w-8 h-8 mr-2'
+            fill='currentColor'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 20 20'
+          >
+            <path d='M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z' />
+          </svg>
+          <span className='text-base leading-normal'>Upload Floor Plan</span>
+          <input onChange={handleFloorPlanUpload} type='file' className='hidden' />
+        </label>
       </div>
       <div className='w-1/5'>{/* Spacer for behind side bar */}</div>
       <div className='w-3/4 p-4'>
         <div className='flex flex-row justify-between'>
           <div>
             <h1 className='text-2xl font-bold mb-4'>Rule Configuration</h1>
-            <Conditions />
+            <Conditions selectedFile={selectedFile} />
           </div>
           <label onClick={handleGeneration} className='h-fit flex items-center gap-1 justify-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue-500 hover:text-white'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -129,6 +149,8 @@ export default function Home() {
           )}
         </div>
       </div>
+
+      {animate && <GenerateAnimation />}
     </div>
   );
 }

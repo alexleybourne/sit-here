@@ -25,7 +25,7 @@ const ConditionalRuleBuilder = (props: any) => {
             onChange={(e) => setFirstCondition(e.target.value)}
           >
             <option value="">Select a department</option>
-            {DEPARTMENT_OPTIONS.map((department) => (
+            {[...DEPARTMENT_OPTIONS, ...props.employeeNames].map((department) => (
               <option key={department} value={department}>
                 {department}
               </option>
@@ -51,7 +51,7 @@ const ConditionalRuleBuilder = (props: any) => {
             onChange={(e) => setThirdCondition(e.target.value)}
           >
             <option value="">Select a department</option>
-            {DEPARTMENT_OPTIONS.map((department) => (
+            {[...DEPARTMENT_OPTIONS, ...props.employeeNames].map((department) => (
               <option key={department} value={department}>
                 {department}
               </option>
