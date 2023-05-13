@@ -34,6 +34,10 @@ export default function Home() {
     );
   };
 
+  const handleGeneration = () => {
+    alert('generating seating plan!')
+  }
+
   return (
     <div className='flex mh-screen w-full'>
       <div className='z-10 fixed h-screen flex flex-col items-center w-1/5 bg-blue-100 py-4 border-r-2 border-blue-700'>
@@ -84,8 +88,19 @@ export default function Home() {
       </div>
       <div className='w-1/5'>{/* Spacer for behind side bar */}</div>
       <div className='w-3/4 p-4'>
-        <h1 className='text-2xl font-bold mb-4'>Rule Configuration</h1>
-        <Conditions />
+        <div className='flex flex-row justify-between'>
+          <div>
+            <h1 className='text-2xl font-bold mb-4'>Rule Configuration</h1>
+            <Conditions />
+          </div>
+          <label onClick={handleGeneration} className='h-fit flex items-center gap-1 justify-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue-500 hover:text-white'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+            <span className='text-base leading-normal'>GENRATE SEATING</span>
+          </label>
+        </div>
+
         <div className="mb-3" />
         <div className='split-line' />
         <div className=''>
