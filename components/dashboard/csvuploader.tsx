@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import Papa from 'papaparse';
+import Conditions from './Conditions';
 
 export default function Home() {
   const [files, setFiles] = useState([]);
@@ -83,7 +84,9 @@ export default function Home() {
       </div>
       <div className='w-1/5'>{/* Spacer for behind side bar */}</div>
       <div className='w-3/4 p-4'>
-        <h1 className='text-2xl font-bold mb-4'>CSV Viewer</h1>
+        <h1 className='text-2xl font-bold mb-4'>Rule Configuration</h1>
+        <Conditions />
+        <div className="mb-3" />
         <div className='split-line' />
         <div className=''>
           {selectedFile && (
