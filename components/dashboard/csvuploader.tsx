@@ -25,6 +25,7 @@ export default function Home() {
   };
 
   const handleRemoveFile = (fileName) => {
+    if (selectedFile && fileName === selectedFile.name) setSelectedFile(null);
     setFiles((prevFiles) => prevFiles.filter((file) => file.name !== fileName));
     localStorage.setItem(
       'csvFiles',
@@ -93,12 +94,12 @@ export default function Home() {
               <table className='w-full border-collapse'>
                 <tbody>
                   {selectedFile.data.map((row, rowIndex) => (
-                    <tr key={rowIndex}>
+                    <tr
+                      key={rowIndex}
+                      className={rowIndex === 0 ? 'font-bold bg-blue-50' : ''}
+                    >
                       {row.map((cell, cellIndex) => (
-                        <td
-                          key={cellIndex}
-                          className='border px-2 py-1 text-sm'
-                        >
+                        <td key={cellIndex} className='border px-2 py-1 text-m'>
                           {cell}
                         </td>
                       ))}
