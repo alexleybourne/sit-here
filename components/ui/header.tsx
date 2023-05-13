@@ -47,9 +47,10 @@ export default function Header() {
               <li className='ml-3'>
                 <Link
                   className='btn-sm inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 group shadow-sm'
-                  href='/apply'
+                  href={'http://localhost:1337/builder'}
+
                 >
-                  Get started
+                  Try now!
                   <span className='tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2'>
                     <svg
                       className='fill-current'
