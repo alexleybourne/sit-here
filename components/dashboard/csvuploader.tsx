@@ -5,11 +5,15 @@ import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import Conditions from './Conditions';
 import GenerateAnimation from './GenerateAnimation';
+import { useRouter } from 'next/navigation';
+
 
 export default function Home() {
   const [files, setFiles] = useState([]);
   const [selectedFile, setSelectedFile] = useState(null);
   const [animate, setAnimate] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     const storedFiles = JSON.parse(localStorage.getItem('csvFiles') || '[]');
@@ -42,7 +46,11 @@ export default function Home() {
 
   const handleGeneration = () => {
     setAnimate(true)
-    setTimeout(() => { setAnimate(false) }, 3000)
+    setTimeout(() => { 
+      setAnimate(false)
+      router.push("/plan")
+    }, 3000)
+
   }
 
   return (
