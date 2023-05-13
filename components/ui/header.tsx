@@ -8,7 +8,7 @@ export default function Header() {
           {/* Site branding */}
           <div className='shrink-0 mr-4'>
             {/* Logo */}
-            <Link className='block' href='/' aria-label='Cruip'>
+            <Link className='block' href='/' aria-label='Home'>
               <svg
                 width='80'
                 viewBox='0 0 368 230'
