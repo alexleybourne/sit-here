@@ -1,5 +1,6 @@
 import Features from '@/public/images/features-03.png';
 import Image from 'next/image';
+import Link from 'next/link';
 import QuoteAuthor from '@/public/images/jeff.jpg';
 
 export default function Section03() {
@@ -46,9 +47,9 @@ export default function Section03() {
                   data-aos-delay='300'
                 >
                   <div>
-                    <a
+                    <Link
                       className='btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm'
-                      href='apply.html'
+                      href='/dashboard'
                     >
                       Get started
                       <span className='tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2'>
@@ -61,7 +62,7 @@ export default function Section03() {
                           <path d='M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z' />
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

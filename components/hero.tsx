@@ -64,7 +64,7 @@ export default function Hero() {
                 <div>
                   <Link
                     className='btn-sm w-full inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 group shadow-sm'
-                    href='/apply'
+                    href='/dashboard'
                   >
                     Try now!
                     <span className='tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2'>
